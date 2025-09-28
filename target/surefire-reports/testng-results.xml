@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="26" passed="26" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-25T21:16:29 IST" name="Surefire suite" finished-at="2025-09-25T21:16:29 IST" duration-ms="149">
+    <groups>
+      <group name="statements">
+        <method signature="BankStatementServiceTest.dateBoundsIncludeNow()[pri:0, instance:service.BankStatementServiceTest@73700b80]" name="dateBoundsIncludeNow" class="service.BankStatementServiceTest"/>
+        <method signature="BankStatementServiceTest.statementContainsAll()[pri:0, instance:service.BankStatementServiceTest@73700b80]" name="statementContainsAll" class="service.BankStatementServiceTest"/>
+      </group> <!-- statements -->
+      <group name="accounts">
+        <method signature="AccountServiceTest.createAndGet()[pri:1, instance:service.AccountServiceTest@6f46426d]" name="createAndGet" class="service.AccountServiceTest"/>
+        <method signature="AccountServiceTest.duplicateThrows()[pri:2, instance:service.AccountServiceTest@6f46426d]" name="duplicateThrows" class="service.AccountServiceTest"/>
+        <method signature="AccountServiceTest.getNotFound()[pri:3, instance:service.AccountServiceTest@6f46426d]" name="getNotFound" class="service.AccountServiceTest"/>
+        <method signature="AccountServiceTest.getBalancePrecision()[pri:4, instance:service.AccountServiceTest@6f46426d]" name="getBalancePrecision" class="service.AccountServiceTest"/>
+        <method signature="AccountServiceTest.onePerTypePerCustomer()[pri:5, instance:service.AccountServiceTest@6f46426d]" name="onePerTypePerCustomer" class="service.AccountServiceTest"/>
+      </group> <!-- accounts -->
+      <group name="repository">
+        <method signature="AccountRepositoryTest.existsAndDelete()[pri:0, instance:repository.AccountRepositoryTest@2f8dad04]" name="existsAndDelete" class="repository.AccountRepositoryTest"/>
+        <method signature="AccountRepositoryTest.saveAndFind()[pri:0, instance:repository.AccountRepositoryTest@2f8dad04]" name="saveAndFind" class="repository.AccountRepositoryTest"/>
+      </group> <!-- repository -->
+      <group name="transactions">
+        <method signature="TransactionServiceTest.deposit_DataDriven(java.lang.String,java.math.BigDecimal,boolean)[pri:1, instance:service.TransactionServiceTest@4d5b6aac]" name="deposit_DataDriven" class="service.TransactionServiceTest"/>
+        <method signature="TransactionServiceTest.deposit_AccountNotFound()[pri:2, instance:service.TransactionServiceTest@4d5b6aac]" name="deposit_AccountNotFound" class="service.TransactionServiceTest"/>
+        <method signature="TransactionServiceTest.withdraw_DataDriven(java.lang.String,java.math.BigDecimal,boolean)[pri:3, instance:service.TransactionServiceTest@4d5b6aac]" name="withdraw_DataDriven" class="service.TransactionServiceTest"/>
+        <method signature="TransactionServiceTest.withdraw_Insufficient()[pri:4, instance:service.TransactionServiceTest@4d5b6aac]" name="withdraw_Insufficient" class="service.TransactionServiceTest"/>
+        <method signature="TransactionServiceTest.transfer_DataDriven(java.lang.String,java.lang.String,java.math.BigDecimal,boolean)[pri:6, instance:service.TransactionServiceTest@4d5b6aac]" name="transfer_DataDriven" class="service.TransactionServiceTest"/>
+        <method signature="TransactionServiceTest.withdraw_AccountNotFound()[pri:5, instance:service.TransactionServiceTest@4d5b6aac]" name="withdraw_AccountNotFound" class="service.TransactionServiceTest"/>
+        <method signature="TransactionServiceTest.transfer_SameAccount_MessageCheck()[pri:7, instance:service.TransactionServiceTest@4d5b6aac]" name="transfer_SameAccount_MessageCheck" class="service.TransactionServiceTest"/>
+      </group> <!-- transactions -->
+    </groups>
+    <test started-at="2025-09-25T21:16:29 IST" name="Surefire test" finished-at="2025-09-25T21:16:29 IST" duration-ms="149">
+      <class name="service.BankStatementServiceTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:service.BankStatementServiceTest@73700b80]" started-at="2025-09-25T21:16:29 IST" name="setUp" finished-at="2025-09-25T21:16:29 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="dateBoundsIncludeNow()[pri:0, instance:service.BankStatementServiceTest@73700b80]" started-at="2025-09-25T21:16:29 IST" name="dateBoundsIncludeNow" finished-at="2025-09-25T21:16:29 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dateBoundsIncludeNow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:service.BankStatementServiceTest@73700b80]" started-at="2025-09-25T21:16:29 IST" name="tearDown" finished-at="2025-09-25T21:16:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="statementContainsAll()[pri:0, instance:service.BankStatementServiceTest@73700b80]" started-at="2025-09-25T21:16:29 IST" name="statementContainsAll" finished-at="2025-09-25T21:16:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- statementContainsAll -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:service.BankStatementServiceTest@73700b80]" started-at="2025-09-25T21:16:29 IST" name="setUp" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:service.BankStatementServiceTest@73700b80]" started-at="2025-09-25T21:16:29 IST" name="tearDown" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- service.BankStatementServiceTest -->
+      <class name="service.TransactionServiceTest">
+        <test-method signature="deposit_DataDriven(java.lang.String,java.math.BigDecimal,boolean)[pri:1, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="deposit_DataDriven" data-provider="depositData" finished-at="2025-09-25T21:16:29 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[100.00]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deposit_DataDriven -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="setUp" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="tearDown" finished-at="2025-09-25T21:16:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="setUp" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="deposit_DataDriven(java.lang.String,java.math.BigDecimal,boolean)[pri:1, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="deposit_DataDriven" data-provider="depositData" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.00]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deposit_DataDriven -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="tearDown" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="deposit_DataDriven(java.lang.String,java.math.BigDecimal,boolean)[pri:1, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="deposit_DataDriven" data-provider="depositData" finished-at="2025-09-25T21:16:29 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-5.00]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deposit_DataDriven -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="setUp" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="tearDown" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="deposit_AccountNotFound()[pri:2, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="deposit_AccountNotFound" finished-at="2025-09-25T21:16:29 IST" duration-ms="1" status="PASS">
+          <exception class="exception.AccountNotFoundException">
+            <message>
+              <![CDATA[Acc not found: NOPE]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[exception.AccountNotFoundException: Acc not found: NOPE
+at service.TransactionService.mustGet(TransactionService.java:28)
+at service.TransactionService.deposit(TransactionService.java:35)
+at service.TransactionServiceTest.deposit_AccountNotFound(TransactionServiceTest.java:60)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- exception.AccountNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deposit_AccountNotFound -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="setUp" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="tearDown" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="withdraw_DataDriven(java.lang.String,java.math.BigDecimal,boolean)[pri:3, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="withdraw_DataDriven" data-provider="withdrawData" finished-at="2025-09-25T21:16:29 IST" depends-on-methods="service.TransactionServiceTest.deposit_DataDriven" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[100.00]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withdraw_DataDriven -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="setUp" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="tearDown" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="withdraw_DataDriven(java.lang.String,java.math.BigDecimal,boolean)[pri:3, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="withdraw_DataDriven" data-provider="withdrawData" finished-at="2025-09-25T21:16:29 IST" depends-on-methods="service.TransactionServiceTest.deposit_DataDriven" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1000.00]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withdraw_DataDriven -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="setUp" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="withdraw_DataDriven(java.lang.String,java.math.BigDecimal,boolean)[pri:3, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="withdraw_DataDriven" data-provider="withdrawData" finished-at="2025-09-25T21:16:29 IST" depends-on-methods="service.TransactionServiceTest.deposit_DataDriven" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1000.01]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withdraw_DataDriven -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="setUp" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="tearDown" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="tearDown" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="withdraw_DataDriven(java.lang.String,java.math.BigDecimal,boolean)[pri:3, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="withdraw_DataDriven" data-provider="withdrawData" finished-at="2025-09-25T21:16:29 IST" depends-on-methods="service.TransactionServiceTest.deposit_DataDriven" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.00]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withdraw_DataDriven -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="tearDown" finished-at="2025-09-25T21:16:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="setUp" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="setUp" finished-at="2025-09-25T21:16:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="withdraw_Insufficient()[pri:4, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="withdraw_Insufficient" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <exception class="exception.InsufficientFundsException">
+            <message>
+              <![CDATA[Not enough funds]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[exception.InsufficientFundsException: Not enough funds
+at service.TransactionService.withdraw(TransactionService.java:45)
+at service.TransactionServiceTest.withdraw_Insufficient(TransactionServiceTest.java:89)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- exception.InsufficientFundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withdraw_Insufficient -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="tearDown" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="setUp" finished-at="2025-09-25T21:16:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="withdraw_AccountNotFound()[pri:5, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="withdraw_AccountNotFound" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <exception class="exception.AccountNotFoundException">
+            <message>
+              <![CDATA[Acc not found: NOPE]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[exception.AccountNotFoundException: Acc not found: NOPE
+at service.TransactionService.mustGet(TransactionService.java:28)
+at service.TransactionService.withdraw(TransactionService.java:44)
+at service.TransactionServiceTest.withdraw_AccountNotFound(TransactionServiceTest.java:94)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- exception.AccountNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withdraw_AccountNotFound -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="tearDown" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="setUp" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="transfer_DataDriven(java.lang.String,java.lang.String,java.math.BigDecimal,boolean)[pri:6, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="transfer_DataDriven" data-provider="transferData" finished-at="2025-09-25T21:16:29 IST" depends-on-methods="service.TransactionServiceTest.withdraw_DataDriven" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[A2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[300.00]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transfer_DataDriven -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="tearDown" finished-at="2025-09-25T21:16:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="setUp" finished-at="2025-09-25T21:16:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="transfer_DataDriven(java.lang.String,java.lang.String,java.math.BigDecimal,boolean)[pri:6, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="transfer_DataDriven" data-provider="transferData" finished-at="2025-09-25T21:16:29 IST" depends-on-methods="service.TransactionServiceTest.withdraw_DataDriven" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[A1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1000.00]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transfer_DataDriven -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="tearDown" finished-at="2025-09-25T21:16:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="setUp" finished-at="2025-09-25T21:16:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="transfer_DataDriven(java.lang.String,java.lang.String,java.math.BigDecimal,boolean)[pri:6, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="transfer_DataDriven" data-provider="transferData" finished-at="2025-09-25T21:16:29 IST" depends-on-methods="service.TransactionServiceTest.withdraw_DataDriven" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[A1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[10.00]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transfer_DataDriven -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="tearDown" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="transfer_DataDriven(java.lang.String,java.lang.String,java.math.BigDecimal,boolean)[pri:6, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="transfer_DataDriven" data-provider="transferData" finished-at="2025-09-25T21:16:29 IST" depends-on-methods="service.TransactionServiceTest.withdraw_DataDriven" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NOPE]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[A1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[10.00]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transfer_DataDriven -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="setUp" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="setUp" finished-at="2025-09-25T21:16:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="tearDown" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="transfer_DataDriven(java.lang.String,java.lang.String,java.math.BigDecimal,boolean)[pri:6, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="transfer_DataDriven" data-provider="transferData" finished-at="2025-09-25T21:16:29 IST" depends-on-methods="service.TransactionServiceTest.withdraw_DataDriven" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NOPE]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[10.00]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transfer_DataDriven -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="tearDown" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="setUp" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="transfer_DataDriven(java.lang.String,java.lang.String,java.math.BigDecimal,boolean)[pri:6, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="transfer_DataDriven" data-provider="transferData" finished-at="2025-09-25T21:16:29 IST" depends-on-methods="service.TransactionServiceTest.withdraw_DataDriven" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[A2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0.00]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transfer_DataDriven -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="tearDown" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="transfer_SameAccount_MessageCheck()[pri:7, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="transfer_SameAccount_MessageCheck" finished-at="2025-09-25T21:16:29 IST" duration-ms="1" status="PASS">
+          <exception class="exception.InvalidAmountException">
+            <message>
+              <![CDATA[Can't transfer to same account]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[exception.InvalidAmountException: Can't transfer to same account
+at service.TransactionService.transfer(TransactionService.java:54)
+at service.TransactionServiceTest.transfer_SameAccount_MessageCheck(TransactionServiceTest.java:133)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- exception.InvalidAmountException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transfer_SameAccount_MessageCheck -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="setUp" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:service.TransactionServiceTest@4d5b6aac]" started-at="2025-09-25T21:16:29 IST" name="tearDown" finished-at="2025-09-25T21:16:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- service.TransactionServiceTest -->
+      <class name="repository.AccountRepositoryTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:repository.AccountRepositoryTest@2f8dad04]" started-at="2025-09-25T21:16:29 IST" name="setUp" finished-at="2025-09-25T21:16:29 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="existsAndDelete()[pri:0, instance:repository.AccountRepositoryTest@2f8dad04]" started-at="2025-09-25T21:16:29 IST" name="existsAndDelete" finished-at="2025-09-25T21:16:29 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- existsAndDelete -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:repository.AccountRepositoryTest@2f8dad04]" started-at="2025-09-25T21:16:29 IST" name="tearDown" finished-at="2025-09-25T21:16:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:repository.AccountRepositoryTest@2f8dad04]" started-at="2025-09-25T21:16:29 IST" name="setUp" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="saveAndFind()[pri:0, instance:repository.AccountRepositoryTest@2f8dad04]" started-at="2025-09-25T21:16:29 IST" name="saveAndFind" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveAndFind -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:repository.AccountRepositoryTest@2f8dad04]" started-at="2025-09-25T21:16:29 IST" name="tearDown" finished-at="2025-09-25T21:16:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- repository.AccountRepositoryTest -->
+      <class name="service.AccountServiceTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:service.AccountServiceTest@6f46426d]" started-at="2025-09-25T21:16:29 IST" name="setUp" finished-at="2025-09-25T21:16:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="createAndGet()[pri:1, instance:service.AccountServiceTest@6f46426d]" started-at="2025-09-25T21:16:29 IST" name="createAndGet" finished-at="2025-09-25T21:16:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAndGet -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:service.AccountServiceTest@6f46426d]" started-at="2025-09-25T21:16:29 IST" name="tearDown" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:service.AccountServiceTest@6f46426d]" started-at="2025-09-25T21:16:29 IST" name="setUp" finished-at="2025-09-25T21:16:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="duplicateThrows()[pri:2, instance:service.AccountServiceTest@6f46426d]" started-at="2025-09-25T21:16:29 IST" name="duplicateThrows" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <exception class="exception.DuplicateAccountException">
+            <message>
+              <![CDATA[Acc already exists: ACC2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[exception.DuplicateAccountException: Acc already exists: ACC2
+at service.AccountService.createAccount(AccountService.java:17)
+at service.AccountServiceTest.duplicateThrows(AccountServiceTest.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- exception.DuplicateAccountException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- duplicateThrows -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:service.AccountServiceTest@6f46426d]" started-at="2025-09-25T21:16:29 IST" name="tearDown" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:service.AccountServiceTest@6f46426d]" started-at="2025-09-25T21:16:29 IST" name="setUp" finished-at="2025-09-25T21:16:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getNotFound()[pri:3, instance:service.AccountServiceTest@6f46426d]" started-at="2025-09-25T21:16:29 IST" name="getNotFound" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <exception class="exception.AccountNotFoundException">
+            <message>
+              <![CDATA[Acc not found: NOPE]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[exception.AccountNotFoundException: Acc not found: NOPE
+at service.AccountService.getAccount(AccountService.java:31)
+at service.AccountServiceTest.getNotFound(AccountServiceTest.java:46)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- exception.AccountNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNotFound -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:service.AccountServiceTest@6f46426d]" started-at="2025-09-25T21:16:29 IST" name="tearDown" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="getBalancePrecision()[pri:4, instance:service.AccountServiceTest@6f46426d]" started-at="2025-09-25T21:16:29 IST" name="getBalancePrecision" finished-at="2025-09-25T21:16:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBalancePrecision -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:service.AccountServiceTest@6f46426d]" started-at="2025-09-25T21:16:29 IST" name="setUp" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:service.AccountServiceTest@6f46426d]" started-at="2025-09-25T21:16:29 IST" name="tearDown" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:service.AccountServiceTest@6f46426d]" started-at="2025-09-25T21:16:29 IST" name="setUp" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="onePerTypePerCustomer()[pri:5, instance:service.AccountServiceTest@6f46426d]" started-at="2025-09-25T21:16:29 IST" name="onePerTypePerCustomer" finished-at="2025-09-25T21:16:29 IST" duration-ms="0" status="PASS">
+          <exception class="exception.DuplicateAccountException">
+            <message>
+              <![CDATA[Customer already has SAVINGS: CX]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[exception.DuplicateAccountException: Customer already has SAVINGS: CX
+at service.AccountService.createAccount(AccountService.java:24)
+at service.AccountServiceTest.onePerTypePerCustomer(AccountServiceTest.java:61)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- exception.DuplicateAccountException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onePerTypePerCustomer -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:service.AccountServiceTest@6f46426d]" started-at="2025-09-25T21:16:29 IST" name="tearDown" finished-at="2025-09-25T21:16:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- service.AccountServiceTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

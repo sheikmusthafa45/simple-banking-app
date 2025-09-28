@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="0.787" tests="26" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Administrator\eclipse-workspace\simple-banking-app\target\test-classes;C:\Users\Administrator\eclipse-workspace\simple-banking-app\target\classes;C:\Users\Administrator\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\Administrator\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\Administrator\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Administrator\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Users\Administrator\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.11.v20240426-1830\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\Administrator\AppData\Local\Temp\surefire12151052463096766147\surefirebooter-20250925211627927_3.jar C:\Users\Administrator\AppData\Local\Temp\surefire12151052463096766147 2025-09-25T21-16-27_632-jvmRun1 surefire-20250925211627927_1tmp surefire_0-20250925211627927_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Administrator\eclipse-workspace\simple-banking-app\target\test-classes;C:\Users\Administrator\eclipse-workspace\simple-banking-app\target\classes;C:\Users\Administrator\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\Administrator\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\Administrator\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Administrator\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Administrator"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="C:\Users\Administrator\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.11.v20240426-1830\jre"/>
+    <property name="file.separator" value="\"/>
+    <property name="style.color" value="always"/>
+    <property name="basedir" value="C:\Users\Administrator\eclipse-workspace\simple-banking-app"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Administrator\AppData\Local\Temp\surefire12151052463096766147\surefirebooter-20250925211627927_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.11+9"/>
+    <property name="user.name" value="Administrator"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.11+9"/>
+    <property name="localRepository" value="C:\Users\Administrator\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\ADMINI~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.11"/>
+    <property name="user.dir" value="C:\Users\Administrator\eclipse-workspace\simple-banking-app"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\Administrator\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.11.v20240426-1830\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/Administrator/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.11.v20240426-1830/jre/bin/server;C:/Users/Administrator/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.11.v20240426-1830/jre/bin;C:\Program Files\Eclipse Adoptium\jdk-21.0.7.6-hotspot\bin;C:\Program Files\Python313\Scripts\;C:\Program Files\Python313\;C:\Program Files\Java\jdk-11.0.15.1\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;%ERLANG_HOME%\bin;C:\Program Files\nodejs\;C:\Program Files\nodejs\node_modules\npm\bin;C:\Java\jdk1.8.0_202\bin;C:\apache-maven-3.9.8\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\apache-jmeter-5.6.3\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Program Files\GrafanaLabs\grafana\bin;C:\Prometheus\prometheus-3.3.0.windows-amd64;C:\Program Files (x86)\Micro Focus\LoadRunner\bin\Silk\Silk Performer 21.0;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.1\bin;;C:\Users\Administrator\AppData\Local\GitHubDesktop\bin;C:\ProgramData\Administrator\GitHubDesktop\bin;C:\Users\Administrator\Desktop;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.11+9"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="existsAndDelete" classname="repository.AccountRepositoryTest" time="0.005">
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="saveAndFind" classname="repository.AccountRepositoryTest" time="0.0"/>
+  <testcase name="createAndGet" classname="service.AccountServiceTest" time="0.0"/>
+  <testcase name="duplicateThrows" classname="service.AccountServiceTest" time="0.001"/>
+  <testcase name="getNotFound" classname="service.AccountServiceTest" time="0.001"/>
+  <testcase name="getBalancePrecision" classname="service.AccountServiceTest" time="0.0"/>
+  <testcase name="onePerTypePerCustomer" classname="service.AccountServiceTest" time="0.0"/>
+  <testcase name="dateBoundsIncludeNow" classname="service.BankStatementServiceTest" time="0.014"/>
+  <testcase name="statementContainsAll" classname="service.BankStatementServiceTest" time="0.001"/>
+  <testcase name="deposit_DataDriven[A1, 100.00, true](1)" classname="service.TransactionServiceTest" time="0.001"/>
+  <testcase name="deposit_DataDriven[A1, 0.00, false](2)" classname="service.TransactionServiceTest" time="0.0"/>
+  <testcase name="deposit_DataDriven[A1, -5.00, false](3)" classname="service.TransactionServiceTest" time="0.001"/>
+  <testcase name="deposit_AccountNotFound" classname="service.TransactionServiceTest" time="0.0"/>
+  <testcase name="withdraw_DataDriven[A1, 100.00, true](1)" classname="service.TransactionServiceTest" time="0.001"/>
+  <testcase name="withdraw_DataDriven[A1, 1000.00, true](2)" classname="service.TransactionServiceTest" time="0.0"/>
+  <testcase name="withdraw_DataDriven[A1, 1000.01, false](3)" classname="service.TransactionServiceTest" time="0.0"/>
+  <testcase name="withdraw_DataDriven[A2, 0.00, false](4)" classname="service.TransactionServiceTest" time="0.0"/>
+  <testcase name="withdraw_Insufficient" classname="service.TransactionServiceTest" time="0.0"/>
+  <testcase name="withdraw_AccountNotFound" classname="service.TransactionServiceTest" time="0.001"/>
+  <testcase name="transfer_DataDriven[A1, A2, 300.00, true](1)" classname="service.TransactionServiceTest" time="0.0"/>
+  <testcase name="transfer_DataDriven[A2, A1, 1000.00, false](2)" classname="service.TransactionServiceTest" time="0.0"/>
+  <testcase name="transfer_DataDriven[A1, A1, 10.00, false](3)" classname="service.TransactionServiceTest" time="0.0"/>
+  <testcase name="transfer_DataDriven[NOPE, A1, 10.00, false](4)" classname="service.TransactionServiceTest" time="0.0"/>
+  <testcase name="transfer_DataDriven[A1, NOPE, 10.00, false](5)" classname="service.TransactionServiceTest" time="0.0"/>
+  <testcase name="transfer_DataDriven[A1, A2, 0.00, false](6)" classname="service.TransactionServiceTest" time="0.0"/>
+  <testcase name="transfer_SameAccount_MessageCheck" classname="service.TransactionServiceTest" time="0.0"/>
+</testsuite>
